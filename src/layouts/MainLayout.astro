@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css"
+import Footer from "../components/Footer.astro"
+import Nav from "../components/Nav.astro"
 
 
 interface Props {
@@ -17,6 +19,8 @@ import MainHead from "./MainHead.astro";
 <html lang="en">
   <MainHead {title} {description} />
   <body>
+    <Nav/>
     <slot> Default Text</slot>
+    <Footer />
   </body>
 </html>
