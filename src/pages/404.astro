@@ -1,0 +1,29 @@
+---
+// component imports
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+---
+
+<MainLayout title="Page Not Found">
+<div class="container" style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100vh",
+    textAlign: "center"
+    }}>
+    <div>
+        <h1>ooopsie doopsie </h1>
+        <p>your'e probably at the construction zone</p>
+    </div>
+    <Link
+    href="/"
+    style="primary"
+    text="Home Page"
+    icon={{
+        name: "tabler:home",
+        side: "right",
+    }} />
+</div>
+</MainLayout>
